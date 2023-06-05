@@ -6,11 +6,24 @@ class ReporteService {
   async find() {
     try {
       const query = `
-      SELECT *FROM
+      SELECT * FROM
+      "SBODEMOGT"."OITM";
+      `;
+      const response = connection.exec(query);
+      return response;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async findOne(id) {
+    try {
+      const query = `
+      SELECT * FROM
       "SBODEMOGT"."OITM"
       WHERE "ItemCode" = ?;
       `;
-      const parameters = ['7060'];
+      const parameters = [`${id}`];
       const response = connection.exec(query, parameters);
       return response;
     } catch (error) {
