@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sap Hana - Node Js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexis Morales",
   "license": "ISC",
   "dependencies": {
     "@sap/hana-client": "^2.16.21",

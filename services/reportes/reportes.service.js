@@ -1,4 +1,4 @@
-const connection  = require("../../database/config");
+const connection = require("../../database/config");
 
 class ReporteService {
   constructor() {}
